@@ -1,0 +1,5 @@
+git/github在使用过程中的问题整理
+1. "failed to push some refs to git"问题
+主要原因是github中的README.md文件不再目录中
+通过执行 git pull --rebase origin master生成向文件，（pull=fetch+merge）
+然后执行 git push -u origin master即可
